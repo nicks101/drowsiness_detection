@@ -1,0 +1,15 @@
+Current Issues:
+
+- laughing also passes the threshold for sleepiness for eyes.
+
+- use the same logic for mouth detection also : yawning one
+(Parul: what's the update on threshold ?)
+
+- what if there's mask on the mouth Nikki?
+We could also see the if the car is moving in straight line or zigzag motion ? Is it possible ?
+
+- alarm sound is annoying, should we change it or do we want the annoying one? 
+annoying sound will definitely wake someone up (hehe)
+
+- swasti : please update the issues
+

@@ -1,21 +1,23 @@
 from scipy.spatial import distance as dist
 from imutils.video import VideoStream
 from imutils import face_utils
-#from threading import Thread
-#import numpy as np
-#import pyglet
-#from pygame import mixer 
+
+
 from winsound import PlaySound, SND_FILENAME, SND_LOOP, SND_ASYNC
+
+# for accessing webcam
 import argparse
+
+# resizing frame
 import imutils
 import time
 import dlib
 import cv2
-import playsound 
+# import playsound 
 
-def sound_alarm(path):
-    # play an alarm sound
-           playsound.playsound('Fire_Alarm.wav')
+# def sound_alarm(path):
+#     # play an alarm sound
+#            playsound.playsound('Fire_Alarm.wav')
     #mixer.init()
     #mixer.music.play()
 
@@ -100,7 +102,7 @@ while True:
         # average the eye aspect ratio together for both eyes
         ear = (leftEAR + rightEAR) / 2.0
 
-        # compute the convex hull for the left and right eye, then
+        # compute the border for the left and right eye, then
         # visualize each of the eyes
         leftEyeHull = cv2.convexHull(leftEye)
         rightEyeHull = cv2.convexHull(rightEye)
